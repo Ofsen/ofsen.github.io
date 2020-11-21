@@ -1,14 +1,21 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 // Components
-import { Header, Main, Footer } from './components';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// Pages
+import { Home, Contact } from './components/pages';
+// Layouts
+import { Header, Footer } from './components/layout';
 
 const App = () => {
 	return (
-		<Fragment>
+		<Router>
 			<Header />
-			<Main />
+			<Switch>
+				<Route exact path='/' component={Home} />
+				<Route exact path='/contact' component={Contact} />
+			</Switch>
 			<Footer />
-		</Fragment>
+		</Router>
 	);
 };
 
