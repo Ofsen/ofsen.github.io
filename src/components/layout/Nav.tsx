@@ -1,21 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Nav: React.FC = () => {
+interface Props {}
+
+const Nav: React.FC<Props> = () => {
 	return (
-		<nav className='Nav'>
-			<ul>
-				<li>
-					<Link to='/'>Home</Link>
-				</li>
-				<li>
-					<Link to='/stuff'>Stuff</Link>
-				</li>
-				<li>
-					<Link to='/contact'>Contact</Link>
-				</li>
-			</ul>
-		</nav>
+		<ul className='nav font-semibold text-1.5r inline-flex justify-center w-full'>
+			<li>
+				<Link to='/' className='active'>
+					Home
+				</Link>
+			</li>
+			<li>
+				<Link to='/illustrations'>Illustrations</Link>
+			</li>
+			<li>
+				<Link to='/code'>Code</Link>
+			</li>
+			<li>
+				<Link to='/contact'>Contact</Link>
+			</li>
+		</ul>
 	);
 };
 
