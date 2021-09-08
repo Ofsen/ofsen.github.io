@@ -1,10 +1,7 @@
 import React from 'react';
-// Components
 import { Link } from 'react-router-dom';
-// CSS
-import '../../assets/css/nav.css';
 
-const Nav = () => {
+const Nav: React.FC = () => {
 	return (
 		<nav className='Nav'>
 			<ul>

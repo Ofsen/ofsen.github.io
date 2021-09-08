@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
-// Components
 import { Main } from '../layout';
 
-const Home = () => {
+const Home: React.FC = () => {
 	return (
 		<Fragment>
 			<Main />

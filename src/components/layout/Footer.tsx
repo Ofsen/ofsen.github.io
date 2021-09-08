@@ -1,8 +1,6 @@
 import React from 'react';
-// CSS
-import '../../assets/css/footer.css';
 
-const Footer = () => {
+const Footer: React.FC = () => {
 	return (
 		<footer>
 			<p>2020 - 2021</p>

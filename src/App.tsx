@@ -1,12 +1,9 @@
 import React from 'react';
-// Components
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// Pages
 import { Home, Contact } from './components/pages';
-// Layouts
 import { Header, Footer } from './components/layout';
 
-const App = () => {
+const App: React.FC = () => {
 	return (
 		<Router>
 			<Header />

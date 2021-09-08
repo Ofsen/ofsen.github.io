@@ -1,12 +1,12 @@
 import React from 'react';
-// CSS
-import '../../assets/css/main.css';
 
-const Main = () => {
+const Main: React.FC = () => {
 	return (
-		<main>
-			<h2>Hello</h2>
-			<p>Yes</p>
+		<main className='bg-blue-light'>
+			<div className='container m-auto'>
+				<h2>Hello</h2>
+				<p>Yes</p>
+			</div>
 		</main>
 	);
 };

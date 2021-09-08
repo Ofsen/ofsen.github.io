@@ -1,9 +1,14 @@
-@font-face {
-	font-family: 'Merriweather';
-	font-style: normal;
-	src: url('./assets/fonts/Merriweather-Regular.ttf'); /* IE9 Compat Modes */
-	src: local('Merriweather'), local('Merriweather Regular'),
-		url('./assets/fonts/Merriweather-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--blue-dark: #1a202c;
+	--blue-light: #222836;
+	--light: #ebf8ff;
+	--red-dark: #c63031;
+	--red-light: #ff2d2e;
+	--electric: #4298e1;
 }
 
 * {
@@ -13,11 +18,23 @@
 }
 
 body {
-	font-family: 'Roboto', 'Open sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #26292c;
-	color: #f5f5f5;
-	width: 84%;
-	margin: 0 auto;
+	background-color: var(--blue-dark);
+	color: var(--light);
+}
+
+.abyss {
+	text-shadow: 0px 0px 10px var(--red-dark);
+	animation: animated-glow 1400ms alternate ease-in-out infinite;
+}
+
+@keyframes animated-glow {
+	from {
+		text-shadow: 0px 0px 10px var(--red-dark);
+	}
+	to {
+		text-shadow: none;
+	}
 }
