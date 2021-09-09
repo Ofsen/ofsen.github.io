@@ -17,6 +17,15 @@
 	box-sizing: content-box;
 }
 
+html, body, #root {
+	height: 100%
+}
+
+#root {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 	-webkit-font-smoothing: antialiased;
